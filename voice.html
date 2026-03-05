@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お客様の声 | ENISHI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    .img-placeholder { background: #d0d0d0; display: flex; align-items: center; justify-content: center; color: #888; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; border: 1px solid #bbb; }
+    section { padding: 80px 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-en { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.25em; color: #999; text-transform: uppercase; margin-bottom: 8px; }
+    .section-title { font-size: 28px; font-weight: 700; letter-spacing: 0.05em; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 8px; }
+    .section-desc { margin-top: 16px; font-size: 14px; color: #555; }
+    .btn { display: inline-block; padding: 14px 36px; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; border: 2px solid #1a1a1a; color: #1a1a1a; background: #fff; cursor: pointer; }
+    .btn-dark { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    .btn-outline-white { display: inline-block; padding: 14px 36px; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; border: 2px solid #fff; color: #fff; background: transparent; cursor: pointer; }
+    .btn-line-lg { display: inline-flex; align-items: center; gap: 12px; padding: 20px 56px; font-size: 17px; font-weight: 700; letter-spacing: 0.08em; border: 3px solid #fff; color: #1a1a1a; background: #fff; cursor: pointer; }
+    .line-icon { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #06C755; border-radius: 4px; font-size: 10px; font-weight: 900; color: #fff; letter-spacing: 0; flex-shrink: 0; }
+    .wf-annotation-bar { background: #fffbe6; border-bottom: 2px solid #e0c000; padding: 10px 40px; text-align: center; font-size: 12px; color: #7a6800; font-weight: 700; letter-spacing: 0.08em; }
+    .fixed-line-btn { position: fixed; bottom: 32px; right: 32px; z-index: 200; }
+    .fixed-line-btn a { display: flex; align-items: center; gap: 10px; padding: 14px 24px; background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; border: 2px solid #1a1a1a; box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
+    .breadcrumb { background: #f5f5f5; padding: 14px 0; border-bottom: 1px solid #e0e0e0; }
+    .breadcrumb-inner { max-width: 1100px; margin: 0 auto; padding: 0 40px; display: flex; gap: 8px; align-items: center; font-size: 12px; color: #888; }
+    .breadcrumb-inner span { color: #bbb; }
+    .page-hero { background: #1a1a1a; padding: 64px 0; text-align: center; }
+    .page-hero-en { font-size: 11px; font-weight: 700; letter-spacing: 0.3em; color: #888; text-transform: uppercase; display: block; margin-bottom: 12px; }
+    .page-hero-title { font-size: 36px; font-weight: 900; color: #fff; letter-spacing: 0.08em; }
+  </style>
+</head>
+<body>
+
+<div class="wf-annotation-bar">&#9888; WIREFRAME ─ 株式会社ENISHI お客様の声ページ（仮テキスト・グレー矩形は画像プレースホルダー）</div>
+
+<div class="fixed-line-btn">
+  <a href="#"><span class="line-icon">LINE</span>無料相談はこちら</a>
+</div>
+
+<!-- HEADER -->
+<header style="position:sticky;top:0;z-index:100;background:#fff;border-bottom:2px solid #1a1a1a;">
+  <div style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 40px;height:72px;">
+    <div>
+      <a href="index.html"><span style="font-size:24px;font-weight:900;letter-spacing:0.15em;">ENISHI</span></a><br>
+      <span style="font-size:9px;letter-spacing:0.15em;color:#888;">株式会社エニシ ─ 不動産仲介売買・賃貸</span>
+    </div>
+    <nav style="display:flex;gap:28px;font-size:13px;font-weight:600;letter-spacing:0.06em;">
+      <a href="company.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">会社について</a>
+      <a href="service.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">サービス</a>
+      <a href="voice.html" style="border-bottom:2px solid #1a1a1a;padding-bottom:2px;">お客様の声</a>
+      <a href="faq.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">よくある質問</a>
+      <a href="news.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">お知らせ</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div style="text-align:right;">
+        <span style="font-size:9px;color:#888;display:block;letter-spacing:0.1em;">お気軽にご相談ください</span>
+        <span style="font-size:18px;font-weight:900;letter-spacing:0.05em;">000-0000-0000</span>
+      </div>
+      <a href="contact.html" class="btn btn-dark" style="padding:10px 24px;font-size:13px;">お問い合わせ</a>
+    </div>
+  </div>
+</header>
+
+<!-- パンくず -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="index.html">TOP</a><span>›</span><span style="color:#1a1a1a;">お客様の声</span>
+  </div>
+</div>
+
+<!-- ページヒーロー -->
+<div class="page-hero">
+  <span class="page-hero-en">CUSTOMER'S VOICE</span>
+  <h1 class="page-hero-title">お客様の声</h1>
+</div>
+
+<!-- カテゴリフィルター -->
+<section style="background:#f5f5f5;padding:32px 0;">
+  <div class="container">
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="#" style="padding:10px 28px;background:#1a1a1a;color:#fff;font-size:13px;font-weight:700;letter-spacing:0.08em;">すべて</a>
+      <a href="#" style="padding:10px 28px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.08em;">賃貸</a>
+      <a href="#" style="padding:10px 28px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.08em;">売買</a>
+      <a href="#" style="padding:10px 28px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.08em;">売却</a>
+      <a href="#" style="padding:10px 28px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.08em;">相続・その他</a>
+    </div>
+  </div>
+</section>
+
+<!-- 声一覧（3カラム × 3行 = 9件） -->
+<section style="background:#fff;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px;">
+
+      <!-- 声01 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">賃貸 ／ 30代 女性</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★★</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「LINEで相談したらすぐに返信をいただけました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">初めての一人暮らしで不安でしたが、LINEで相談したら丁寧に返信いただきました。担当の方がとても親切で、安心して進めることができました。</p>
+      </div>
+
+      <!-- 声02 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">売買 ／ 40代 ご夫婦</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★★</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「資金計画から物件選びまで丁寧にサポートしてもらいました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">マイホーム購入にあたり、資金計画から物件選びまで丁寧にサポートしていただきました。全国どこからでも対応してくれるので、とても頼りになりました。</p>
+      </div>
+
+      <!-- 声03 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">売却 ／ 50代 男性</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★★</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「複雑な状況でも丁寧に対応していただきました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">相続した不動産の売却をお願いしました。複雑な状況でしたが、丁寧に対応していただき、無事に売却することができました。本当に感謝しています。</p>
+      </div>
+
+      <!-- 声04 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">賃貸 ／ 20代 男性</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★☆</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「遠方からでも安心して相談できました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">引越し先が遠方で現地に行けなかったのですが、オンラインで丁寧に対応していただきました。写真や動画も送っていただき、安心して決めることができました。</p>
+      </div>
+
+      <!-- 声05 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">売買 ／ 30代 男性</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★★</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「投資用物件の購入をサポートしていただきました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">初めての不動産投資で不安でしたが、収益シミュレーションや税金の説明まで丁寧にしていただきました。信頼できる担当者に出会えてよかったです。</p>
+      </div>
+
+      <!-- 声06 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">相続 ／ 60代 女性</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★★</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「相続の手続きも含めてトータルサポートしてもらいました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">親から相続した土地の活用方法を相談しました。税理士さんとも連携していただき、売却か賃貸かの判断から手続きまで、丁寧にサポートしていただきました。</p>
+      </div>
+
+      <!-- 声07 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">賃貸 ／ 40代 ご夫婦</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★★</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「子育て世帯に合った物件を提案してもらえました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">学区や周辺環境など細かい希望を伝えたところ、条件に合った物件をいくつかピックアップしてもらえました。子育て世帯の視点で考えてくれる担当者でした。</p>
+      </div>
+
+      <!-- 声08 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">売却 ／ 40代 女性</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★★</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「査定から売却まで想定より早く進みました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">住み替えに伴い自宅を売却しました。査定の回答が早く、売却活動も積極的に動いていただいたおかげで、想定より早く売却できました。</p>
+      </div>
+
+      <!-- 声09 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">売買 ／ 50代 男性</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <span style="font-size:14px;color:#1a1a1a;">★★★★☆</span>
+        </div>
+        <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;">「しつこい営業が一切なく安心して相談できました」</h4>
+        <p style="font-size:13px;color:#555;line-height:1.8;">他社では何度も電話がかかってきて困りましたが、ENISHIさんはこちらのペースを尊重してくれました。検討期間中もずっと丁寧に対応していただきました。</p>
+      </div>
+
+    </div>
+
+    <!-- ページネーション -->
+    <div style="display:flex;justify-content:center;gap:8px;margin-top:56px;">
+      <span style="width:40px;height:40px;background:#1a1a1a;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">1</span>
+      <a href="#" style="width:40px;height:40px;background:#fff;color:#1a1a1a;border:1px solid #ddd;display:flex;align-items:center;justify-content:center;font-size:13px;">2</a>
+      <a href="#" style="width:40px;height:40px;background:#fff;color:#1a1a1a;border:1px solid #ddd;display:flex;align-items:center;justify-content:center;font-size:13px;">3</a>
+      <a href="#" style="width:40px;height:40px;background:#fff;color:#1a1a1a;border:1px solid #ddd;display:flex;align-items:center;justify-content:center;font-size:13px;">›</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:#1a1a1a;padding:80px 0;">
+  <div style="max-width:700px;margin:0 auto;padding:0 40px;text-align:center;">
+    <h2 style="font-size:28px;font-weight:900;color:#fff;line-height:1.5;margin-bottom:16px;">あなたのご相談もお気軽にどうぞ。</h2>
+    <p style="font-size:14px;color:#aaa;line-height:1.9;margin-bottom:36px;">売買・賃貸・売却・相続など、どんなご相談もOK。<br>完全無料・しつこい営業なし。</p>
+    <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+      <a href="#" class="btn-line-lg"><span class="line-icon">LINE</span>LINEで無料相談する</a>
+      <a href="contact.html" class="btn-outline-white" style="padding:20px 40px;font-size:15px;">メールでお問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#111;padding:64px 0 32px;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 40px;">
+    <div style="display:grid;grid-template-columns:280px 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid #333;">
+      <div>
+        <span style="font-size:22px;font-weight:900;letter-spacing:0.15em;color:#fff;">ENISHI</span><br>
+        <span style="font-size:9px;letter-spacing:0.15em;color:#666;">株式会社エニシ</span>
+        <p style="font-size:12px;color:#888;margin-top:16px;line-height:1.9;">不動産仲介売買・賃貸を専門とする<br>全国対応の不動産会社です。<br><br>〒000-0000<br>○○県○○市○○区<br>TEL: 000-0000-0000</p>
+      </div>
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">SERVICES</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a href="service.html" style="font-size:12px;color:#888;">賃貸仲介</a></li>
+          <li><a href="service.html" style="font-size:12px;color:#888;">売買仲介</a></li>
+          <li><a href="service.html" style="font-size:12px;color:#888;">不動産売却・査定</a></li>
+          <li><a href="contact.html" style="font-size:12px;color:#888;">LINE無料相談</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">COMPANY</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a href="company.html" style="font-size:12px;color:#888;">会社概要</a></li>
+          <li><a href="company.html" style="font-size:12px;color:#888;">スタッフ紹介</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">INFORMATION</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a href="news.html" style="font-size:12px;color:#888;">お知らせ</a></li>
+          <li><a href="faq.html" style="font-size:12px;color:#888;">よくある質問</a></li>
+          <li><a href="contact.html" style="font-size:12px;color:#888;">お問い合わせ</a></li>
+          <li><a href="#" style="font-size:12px;color:#888;">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding-top:32px;">
+      <div style="display:flex;gap:12px;">
+        <div style="width:36px;height:36px;background:#333;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:10px;color:#888;font-weight:700;">IG</div>
+        <div style="width:36px;height:36px;background:#06C755;border:1px solid #06C755;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;">LN</div>
+        <div style="width:36px;height:36px;background:#333;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:10px;color:#888;font-weight:700;">TW</div>
+      </div>
+      <p style="font-size:11px;color:#555;letter-spacing:0.05em;">© 2026 ENISHI Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

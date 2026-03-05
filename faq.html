@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>よくある質問 | ENISHI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    section { padding: 80px 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-en { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.25em; color: #999; text-transform: uppercase; margin-bottom: 8px; }
+    .section-title { font-size: 28px; font-weight: 700; letter-spacing: 0.05em; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 8px; }
+    .section-desc { margin-top: 16px; font-size: 14px; color: #555; }
+    .btn { display: inline-block; padding: 14px 36px; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; border: 2px solid #1a1a1a; color: #1a1a1a; background: #fff; cursor: pointer; }
+    .btn-dark { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    .btn-outline-white { display: inline-block; padding: 14px 36px; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; border: 2px solid #fff; color: #fff; background: transparent; cursor: pointer; }
+    .btn-line-lg { display: inline-flex; align-items: center; gap: 12px; padding: 20px 56px; font-size: 17px; font-weight: 700; letter-spacing: 0.08em; border: 3px solid #fff; color: #1a1a1a; background: #fff; cursor: pointer; }
+    .line-icon { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #06C755; border-radius: 4px; font-size: 10px; font-weight: 900; color: #fff; letter-spacing: 0; flex-shrink: 0; }
+    .wf-annotation-bar { background: #fffbe6; border-bottom: 2px solid #e0c000; padding: 10px 40px; text-align: center; font-size: 12px; color: #7a6800; font-weight: 700; letter-spacing: 0.08em; }
+    .fixed-line-btn { position: fixed; bottom: 32px; right: 32px; z-index: 200; }
+    .fixed-line-btn a { display: flex; align-items: center; gap: 10px; padding: 14px 24px; background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; border: 2px solid #1a1a1a; box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
+    .breadcrumb { background: #f5f5f5; padding: 14px 0; border-bottom: 1px solid #e0e0e0; }
+    .breadcrumb-inner { max-width: 1100px; margin: 0 auto; padding: 0 40px; display: flex; gap: 8px; align-items: center; font-size: 12px; color: #888; }
+    .breadcrumb-inner span { color: #bbb; }
+    .page-hero { background: #1a1a1a; padding: 64px 0; text-align: center; }
+    .page-hero-en { font-size: 11px; font-weight: 700; letter-spacing: 0.3em; color: #888; text-transform: uppercase; display: block; margin-bottom: 12px; }
+    .page-hero-title { font-size: 36px; font-weight: 900; color: #fff; letter-spacing: 0.08em; }
+    /* FAQ アコーディオン */
+    .faq-item { border: 1px solid #ddd; margin-bottom: 12px; background: #fff; }
+    .faq-q { padding: 22px 28px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+    .faq-q p { font-size: 14px; font-weight: 700; }
+    .faq-q-label { color: #888; margin-right: 12px; font-size: 12px; letter-spacing: 0.1em; }
+    .faq-toggle { font-size: 22px; color: #888; font-weight: 300; flex-shrink: 0; }
+    .faq-a { padding: 0 28px 22px; border-top: 1px solid #eee; }
+    .faq-a p { font-size: 13px; color: #555; line-height: 1.9; padding-top: 16px; }
+    .faq-a-label { color: #888; margin-right: 12px; font-size: 12px; letter-spacing: 0.1em; }
+    /* カテゴリタブ */
+    .faq-category-title { font-size: 18px; font-weight: 700; margin-bottom: 24px; padding-left: 16px; border-left: 4px solid #1a1a1a; }
+  </style>
+</head>
+<body>
+
+<div class="wf-annotation-bar">&#9888; WIREFRAME ─ 株式会社ENISHI よくある質問ページ（仮テキスト）</div>
+
+<div class="fixed-line-btn">
+  <a href="#"><span class="line-icon">LINE</span>無料相談はこちら</a>
+</div>
+
+<!-- HEADER -->
+<header style="position:sticky;top:0;z-index:100;background:#fff;border-bottom:2px solid #1a1a1a;">
+  <div style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 40px;height:72px;">
+    <div>
+      <a href="index.html"><span style="font-size:24px;font-weight:900;letter-spacing:0.15em;">ENISHI</span></a><br>
+      <span style="font-size:9px;letter-spacing:0.15em;color:#888;">株式会社エニシ ─ 不動産仲介売買・賃貸</span>
+    </div>
+    <nav style="display:flex;gap:28px;font-size:13px;font-weight:600;letter-spacing:0.06em;">
+      <a href="company.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">会社について</a>
+      <a href="service.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">サービス</a>
+      <a href="voice.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">お客様の声</a>
+      <a href="faq.html" style="border-bottom:2px solid #1a1a1a;padding-bottom:2px;">よくある質問</a>
+      <a href="news.html" style="border-bottom:2px solid transparent;padding-bottom:2px;">お知らせ</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div style="text-align:right;">
+        <span style="font-size:9px;color:#888;display:block;letter-spacing:0.1em;">お気軽にご相談ください</span>
+        <span style="font-size:18px;font-weight:900;letter-spacing:0.05em;">000-0000-0000</span>
+      </div>
+      <a href="contact.html" class="btn btn-dark" style="padding:10px 24px;font-size:13px;">お問い合わせ</a>
+    </div>
+  </div>
+</header>
+
+<!-- パンくず -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="index.html">TOP</a><span>›</span><span style="color:#1a1a1a;">よくある質問</span>
+  </div>
+</div>
+
+<!-- ページヒーロー -->
+<div class="page-hero">
+  <span class="page-hero-en">FAQ</span>
+  <h1 class="page-hero-title">よくある質問</h1>
+</div>
+
+<!-- カテゴリジャンプリンク -->
+<section style="background:#f5f5f5;padding:32px 0;">
+  <div class="container">
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="#faq-general" style="padding:10px 24px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.06em;">ご相談・費用について</a>
+      <a href="#faq-rental" style="padding:10px 24px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.06em;">賃貸について</a>
+      <a href="#faq-buy" style="padding:10px 24px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.06em;">売買について</a>
+      <a href="#faq-sell" style="padding:10px 24px;background:#fff;color:#1a1a1a;border:2px solid #1a1a1a;font-size:13px;font-weight:700;letter-spacing:0.06em;">売却・査定について</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ本体 -->
+<section style="background:#fff;">
+  <div class="container">
+    <div style="max-width:860px;margin:0 auto;">
+
+      <!-- カテゴリ1：ご相談・費用について -->
+      <div id="faq-general" style="margin-bottom:64px;">
+        <h2 class="faq-category-title">ご相談・費用について</h2>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>相談は本当に無料ですか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、ご相談は完全無料です。LINEでのご相談から、ご成約まで一切費用はかかりません。お気軽にご連絡ください。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>遠方でも対応してもらえますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>全国どこからでもご相談いただけます。オンライン・LINEでの対応が可能ですので、お気軽にご連絡ください。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>しつこい営業はありますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>一切ありません。お客様のペースに合わせてご対応いたします。「まだ検討中」という段階でも大歓迎です。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>LINEで相談した場合、どのくらいで返信がもらえますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>営業時間内（9:00〜18:00）であれば、基本的に当日中にご返信いたします。お急ぎの場合はお電話でもご対応可能です。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>仲介手数料はいくらですか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>宅地建物取引業法に基づく上限額の範囲内で設定しております。詳細はご相談内容によって異なりますので、お気軽にお問い合わせください。</p></div>
+        </div>
+      </div>
+
+      <!-- カテゴリ2：賃貸について -->
+      <div id="faq-rental" style="margin-bottom:64px;">
+        <h2 class="faq-category-title">賃貸について</h2>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>希望条件を伝えれば物件を探してもらえますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、ご希望の条件（エリア・家賃・間取り・こだわり条件など）をお伝えいただければ、専門スタッフが最適な物件をご提案します。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>内見はオンラインでも可能ですか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、オンライン内見にも対応しています。遠方にお住まいの方や、忙しくて現地に行けない方もお気軽にご相談ください。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>法人契約にも対応していますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、法人契約にも対応しております。社宅・事務所・店舗など、法人のご相談もお気軽にどうぞ。</p></div>
+        </div>
+      </div>
+
+      <!-- カテゴリ3：売買について -->
+      <div id="faq-buy" style="margin-bottom:64px;">
+        <h2 class="faq-category-title">売買について</h2>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>住宅ローンの相談もできますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、住宅ローンのご相談にも対応しています。提携金融機関のご紹介や、返済シミュレーションのご提案も行っています。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>投資用物件の購入相談もできますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、投資用物件の購入・収益シミュレーション・運用相談にも対応しています。初めての不動産投資の方もお気軽にご相談ください。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>購入から引き渡しまでどのくらいかかりますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>物件の状況や住宅ローンの審査状況によって異なりますが、一般的には2〜3ヶ月程度が目安です。詳しくはご相談時にご説明します。</p></div>
+        </div>
+      </div>
+
+      <!-- カテゴリ4：売却・査定について -->
+      <div id="faq-sell">
+        <h2 class="faq-category-title">売却・査定について</h2>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>売却査定はどのくらいで回答もらえますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>簡易査定は最短即日でご回答いたします。詳細査定は物件の状況により数日いただく場合がございます。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>相続した不動産の売却も相談できますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、相続不動産の売却・活用・賃貸化など、複雑な状況にも対応しています。税理士・司法書士との連携サポートも行っています。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>売却活動中も住み続けることはできますか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>はい、売却活動中も引き続きお住まいいただけます。内見の日程調整などもご相談に応じて柔軟に対応します。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><p><span class="faq-q-label">Q.</span>売却にかかる費用はどのくらいですか？</p><span class="faq-toggle">+</span></div>
+          <div class="faq-a"><p><span class="faq-a-label">A.</span>仲介手数料（売却価格の3%+6万円+消費税が上限）のほか、登記費用・税金などがかかります。詳細はご相談時にご説明します。</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:#1a1a1a;padding:80px 0;">
+  <div style="max-width:700px;margin:0 auto;padding:0 40px;text-align:center;">
+    <h2 style="font-size:28px;font-weight:900;color:#fff;line-height:1.5;margin-bottom:16px;">解決しない疑問はお気軽にご相談ください。</h2>
+    <p style="font-size:14px;color:#aaa;line-height:1.9;margin-bottom:36px;">LINEやメールで、どんな小さな疑問もお答えします。<br>完全無料・しつこい営業なし。</p>
+    <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+      <a href="#" class="btn-line-lg"><span class="line-icon">LINE</span>LINEで無料相談する</a>
+      <a href="contact.html" class="btn-outline-white" style="padding:20px 40px;font-size:15px;">メールでお問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#111;padding:64px 0 32px;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 40px;">
+    <div style="display:grid;grid-template-columns:280px 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid #333;">
+      <div>
+        <span style="font-size:22px;font-weight:900;letter-spacing:0.15em;color:#fff;">ENISHI</span><br>
+        <span style="font-size:9px;letter-spacing:0.15em;color:#666;">株式会社エニシ</span>
+        <p style="font-size:12px;color:#888;margin-top:16px;line-height:1.9;">不動産仲介売買・賃貸を専門とする<br>全国対応の不動産会社です。<br><br>〒000-0000<br>○○県○○市○○区<br>TEL: 000-0000-0000</p>
+      </div>
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">SERVICES</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a href="service.html" style="font-size:12px;color:#888;">賃貸仲介</a></li>
+          <li><a href="service.html" style="font-size:12px;color:#888;">売買仲介</a></li>
+          <li><a href="service.html" style="font-size:12px;color:#888;">不動産売却・査定</a></li>
+          <li><a href="contact.html" style="font-size:12px;color:#888;">LINE無料相談</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">COMPANY</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a href="company.html" style="font-size:12px;color:#888;">会社概要</a></li>
+          <li><a href="company.html" style="font-size:12px;color:#888;">スタッフ紹介</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">INFORMATION</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a href="news.html" style="font-size:12px;color:#888;">お知らせ</a></li>
+          <li><a href="faq.html" style="font-size:12px;color:#888;">よくある質問</a></li>
+          <li><a href="contact.html" style="font-size:12px;color:#888;">お問い合わせ</a></li>
+          <li><a href="#" style="font-size:12px;color:#888;">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding-top:32px;">
+      <div style="display:flex;gap:12px;">
+        <div style="width:36px;height:36px;background:#333;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:10px;color:#888;font-weight:700;">IG</div>
+        <div style="width:36px;height:36px;background:#06C755;border:1px solid #06C755;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;">LN</div>
+        <div style="width:36px;height:36px;background:#333;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:10px;color:#888;font-weight:700;">TW</div>
+      </div>
+      <p style="font-size:11px;color:#555;letter-spacing:0.05em;">© 2026 ENISHI Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
