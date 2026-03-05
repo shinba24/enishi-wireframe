@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENISHI ─ ワイヤーフレーム</title>
+  <style>
+    /* ─── リセット & ベース ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ─── 画像プレースホルダー ─── */
+    .img-placeholder {
+      background: #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      border: 1px solid #bbb;
+    }
+
+    /* ─── セクション共通 ─── */
+    section { padding: 80px 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-en {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      color: #999;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #1a1a1a;
+      border-bottom: 2px solid #1a1a1a;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+    .section-desc { margin-top: 16px; font-size: 14px; color: #555; }
+
+    /* ─── ボタン ─── */
+    .btn {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      border: 2px solid #1a1a1a;
+      color: #1a1a1a;
+      background: #fff;
+      cursor: pointer;
+    }
+    .btn-dark { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    .btn-outline-white {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      border: 2px solid #fff;
+      color: #fff;
+      background: transparent;
+      cursor: pointer;
+    }
+    .btn-white {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      border: 2px solid #fff;
+      color: #1a1a1a;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    /* ─── ワイヤーフレーム注釈バー ─── */
+    .wf-annotation-bar {
+      background: #fffbe6;
+      border-bottom: 2px solid #e0c000;
+      padding: 10px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #7a6800;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── セクションラベル行 ─── */
+    .section-label-row {
+      background: #f0f0f0;
+      border-top: 2px dashed #bbb;
+      border-bottom: 1px solid #ddd;
+      padding: 8px 40px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #888;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: #1a1a1a;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─────────────────────────────────────── -->
+<!-- ワイヤーフレーム注釈バー -->
+<!-- ─────────────────────────────────────── -->
+<div class="wf-annotation-bar">
+  &#9888; WIREFRAME ─ 株式会社ENISHI ホームページ ワイヤーフレーム（仮テキスト・グレー矩形は画像プレースホルダー）
+</div>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 01 HEADER -->
+<!-- ─────────────────────────────────────── -->
+<header id="header" style="position:sticky;top:0;z-index:100;background:#fff;border-bottom:2px solid #1a1a1a;">
+  <div style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 40px;height:72px;">
+    <!-- ロゴ -->
+    <div>
+      <span style="font-size:24px;font-weight:900;letter-spacing:0.15em;">ENISHI</span><br>
+      <span style="font-size:9px;letter-spacing:0.15em;color:#888;">株式会社エニシ ─ 不動産仲介売買・賃貸</span>
+    </div>
+    <!-- グローバルナビ -->
+    <nav style="display:flex;gap:28px;font-size:13px;font-weight:600;letter-spacing:0.06em;">
+      <a href="#" style="border-bottom:2px solid transparent;padding-bottom:2px;">賃貸物件を探す</a>
+      <a href="#" style="border-bottom:2px solid transparent;padding-bottom:2px;">売買物件を探す</a>
+      <a href="#" style="border-bottom:2px solid transparent;padding-bottom:2px;">会社について</a>
+      <a href="#" style="border-bottom:2px solid transparent;padding-bottom:2px;">サービス</a>
+      <a href="#" style="border-bottom:2px solid transparent;padding-bottom:2px;">お知らせ</a>
+    </nav>
+    <!-- 電話番号 & CTA -->
+    <div style="display:flex;align-items:center;gap:20px;">
+      <div style="text-align:right;">
+        <span style="font-size:9px;color:#888;display:block;letter-spacing:0.1em;">お気軽にご相談ください</span>
+        <span style="font-size:18px;font-weight:900;letter-spacing:0.05em;">000-0000-0000</span>
+      </div>
+      <a href="#" class="btn btn-dark" style="padding:10px 24px;font-size:13px;">お問い合わせ</a>
+    </div>
+  </div>
+</header>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 02 HERO -->
+<!-- ─────────────────────────────────────── -->
+<section id="hero" style="padding:0;">
+  <div style="position:relative;width:100%;height:640px;overflow:hidden;">
+    <!-- 背景画像プレースホルダー -->
+    <div class="img-placeholder" style="position:absolute;top:0;left:0;width:100%;height:100%;font-size:16px;border:none;">
+      [ メインビジュアル画像 ─ スライド 1 / 3 ]
+    </div>
+    <!-- オーバーレイ（テキスト可読性向上） -->
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0.45);z-index:1;"></div>
+    <!-- キャッチコピー & CTA -->
+    <div style="position:absolute;top:50%;left:10%;transform:translateY(-50%);z-index:10;max-width:580px;">
+      <p style="font-size:13px;font-weight:700;letter-spacing:0.25em;color:#888;text-transform:uppercase;margin-bottom:12px;">ENISHI REAL ESTATE</p>
+      <p style="font-size:42px;font-weight:900;color:#1a1a1a;line-height:1.35;margin-bottom:16px;">
+        あなたの理想の住まいを、<br>共に見つける。
+      </p>
+      <p style="font-size:15px;color:#444;line-height:1.9;margin-bottom:36px;">
+        売買・賃貸、どちらもENISHIにお任せください。<br>
+        地域に根ざした専門知識で、最適な一手をご提案します。
+      </p>
+      <div style="display:flex;gap:16px;">
+        <a href="#" class="btn btn-dark">物件を探す</a>
+        <a href="#" class="btn">無料査定はこちら</a>
+      </div>
+    </div>
+    <!-- スライドインジケーター -->
+    <div style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10;">
+      <div style="width:10px;height:10px;border-radius:50%;background:#1a1a1a;border:1px solid #888;"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#bbb;border:1px solid #888;"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#bbb;border:1px solid #888;"></div>
+    </div>
+    <!-- SCROLLインジケーター -->
+    <div style="position:absolute;bottom:24px;right:48px;display:flex;flex-direction:column;align-items:center;gap:6px;z-index:10;">
+      <span style="font-size:9px;letter-spacing:0.2em;color:#555;writing-mode:vertical-rl;">SCROLL</span>
+      <div style="width:1px;height:48px;background:#555;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 03 SEARCH -->
+<!-- ─────────────────────────────────────── -->
+<section id="search" style="padding:0;background:#f5f5f5;border-bottom:1px solid #ddd;">
+  <div style="max-width:1100px;margin:0 auto;padding:40px;">
+    <!-- タブ -->
+    <div style="display:flex;gap:0;margin-bottom:24px;border-bottom:2px solid #1a1a1a;">
+      <div style="padding:12px 32px;font-size:14px;font-weight:700;background:#1a1a1a;color:#fff;border:1px solid #1a1a1a;border-bottom:none;letter-spacing:0.05em;">賃貸物件を探す</div>
+      <div style="padding:12px 32px;font-size:14px;font-weight:700;background:#e0e0e0;color:#888;border:1px solid #ccc;border-bottom:none;letter-spacing:0.05em;">売買物件を探す</div>
+      <div style="padding:12px 32px;font-size:14px;font-weight:700;background:#e0e0e0;color:#888;border:1px solid #ccc;border-bottom:none;letter-spacing:0.05em;">売却査定を依頼する</div>
+    </div>
+    <!-- 検索フォーム -->
+    <div style="display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap;">
+      <div style="display:flex;flex-direction:column;gap:6px;flex:1;min-width:160px;">
+        <label style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:#555;">エリア・沿線</label>
+        <select style="padding:12px 14px;border:1px solid #bbb;background:#fff;font-size:14px;color:#555;">
+          <option>エリアを選択してください</option>
+          <option>○○市・○○区</option>
+        </select>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;flex:1;min-width:140px;">
+        <label style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:#555;">物件種別</label>
+        <select style="padding:12px 14px;border:1px solid #bbb;background:#fff;font-size:14px;color:#555;">
+          <option>種別を選択してください</option>
+          <option>マンション</option>
+          <option>アパート</option>
+        </select>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;flex:1;min-width:140px;">
+        <label style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:#555;">家賃・価格帯</label>
+        <select style="padding:12px 14px;border:1px solid #bbb;background:#fff;font-size:14px;color:#555;">
+          <option>上限を選択してください</option>
+          <option>5万円以下</option>
+          <option>10万円以下</option>
+        </select>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;flex:1;min-width:120px;">
+        <label style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:#555;">間取り</label>
+        <select style="padding:12px 14px;border:1px solid #bbb;background:#fff;font-size:14px;color:#555;">
+          <option>間取りを選択</option>
+          <option>1K・1DK</option>
+          <option>1LDK</option>
+          <option>2LDK以上</option>
+        </select>
+      </div>
+      <button style="padding:13px 40px;background:#1a1a1a;color:#fff;font-size:14px;font-weight:700;border:none;cursor:pointer;letter-spacing:0.1em;white-space:nowrap;">検索する</button>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 04 ABOUT -->
+<!-- ─────────────────────────────────────── -->
+<section id="about" style="background:#fff;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+      <!-- 画像 -->
+      <div class="img-placeholder" style="width:100%;height:400px;font-size:13px;">[ 会社・スタッフ紹介画像 ]</div>
+      <!-- テキスト -->
+      <div>
+        <span class="section-en">ABOUT ENISHI</span>
+        <h2 style="font-size:26px;font-weight:900;line-height:1.5;margin-bottom:20px;margin-top:8px;">
+          お客様との"縁"を大切に、<br>理想の住まいをつなぐ。
+        </h2>
+        <p style="font-size:14px;color:#555;line-height:1.9;margin-bottom:16px;">
+          株式会社ENISHIは、不動産仲介売買・賃貸を専門とする地域密着型の不動産会社です。
+          「縁」という言葉が示すように、お客様と物件、そして地域との良き縁をつなぐことを
+          使命としています。
+        </p>
+        <p style="font-size:14px;color:#555;line-height:1.9;margin-bottom:32px;">
+          豊富な地域情報と経験豊かなスタッフが、売買・賃貸のどちらのニーズにも
+          誠実にお応えします。はじめての方も、お気軽にご相談ください。
+        </p>
+        <a href="#" class="btn">会社概要を見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 05 STRENGTHS -->
+<!-- ─────────────────────────────────────── -->
+<section id="strengths" style="background:#f5f5f5;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-en">OUR STRENGTHS</span>
+      <h2 class="section-title">ENISHIが選ばれる理由</h2>
+      <p class="section-desc">お客様に安心・納得の不動産体験を提供するための、3つのこだわり。</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;">
+      <!-- 強み 01 -->
+      <div style="background:#fff;border:1px solid #ddd;padding:48px 32px;text-align:center;">
+        <span style="font-size:40px;font-weight:900;color:#d0d0d0;display:block;margin-bottom:16px;">01</span>
+        <div class="img-placeholder" style="width:64px;height:64px;margin:0 auto 20px;font-size:10px;border-radius:50%;">ICON</div>
+        <h3 style="font-size:17px;font-weight:700;margin-bottom:12px;">地域密着の専門知識</h3>
+        <p style="font-size:13px;color:#666;line-height:1.8;">地元エリアに精通したスタッフが、相場・周辺環境・学区など細かな情報まで丁寧にご案内します。</p>
+      </div>
+      <!-- 強み 02 -->
+      <div style="background:#fff;border:1px solid #ddd;padding:48px 32px;text-align:center;">
+        <span style="font-size:40px;font-weight:900;color:#d0d0d0;display:block;margin-bottom:16px;">02</span>
+        <div class="img-placeholder" style="width:64px;height:64px;margin:0 auto 20px;font-size:10px;border-radius:50%;">ICON</div>
+        <h3 style="font-size:17px;font-weight:700;margin-bottom:12px;">売買・賃貸の一貫サポート</h3>
+        <p style="font-size:13px;color:#666;line-height:1.8;">売買仲介から賃貸管理まで、一社でトータルにサポート。ライフステージの変化にも柔軟に対応します。</p>
+      </div>
+      <!-- 強み 03 -->
+      <div style="background:#fff;border:1px solid #ddd;padding:48px 32px;text-align:center;">
+        <span style="font-size:40px;font-weight:900;color:#d0d0d0;display:block;margin-bottom:16px;">03</span>
+        <div class="img-placeholder" style="width:64px;height:64px;margin:0 auto 20px;font-size:10px;border-radius:50%;">ICON</div>
+        <h3 style="font-size:17px;font-weight:700;margin-bottom:12px;">誠実・丁寧なご対応</h3>
+        <p style="font-size:13px;color:#666;line-height:1.8;">お客様の立場に立ち、疑問や不安を解消しながら、最適なご提案を心がけています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 06 SERVICES -->
+<!-- ─────────────────────────────────────── -->
+<section id="services" style="background:#fff;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-en">OUR SERVICES</span>
+      <h2 class="section-title">サービス紹介</h2>
+      <p class="section-desc">ENISHIは、お客様のニーズに合わせた2つのサービスを提供しています。</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+      <!-- 賃貸仲介 -->
+      <div style="border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:240px;font-size:14px;">[ 賃貸仲介イメージ画像 ]</div>
+        <div style="padding:36px 32px;">
+          <span style="font-size:10px;font-weight:700;letter-spacing:0.2em;color:#888;text-transform:uppercase;display:block;margin-bottom:8px;">RENTAL</span>
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:16px;">賃貸仲介</h3>
+          <p style="font-size:13px;color:#666;line-height:1.8;margin-bottom:24px;">
+            豊富な賃貸物件情報の中から、お客様のご要望・ご予算に合った最適なお部屋をご提案します。
+            初期費用のご相談から入居後のサポートまで、安心してお任せください。
+          </p>
+          <a href="#" class="btn" style="font-size:13px;padding:12px 28px;">賃貸物件を探す &rarr;</a>
+        </div>
+      </div>
+      <!-- 売買仲介 -->
+      <div style="border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:240px;font-size:14px;">[ 売買仲介イメージ画像 ]</div>
+        <div style="padding:36px 32px;">
+          <span style="font-size:10px;font-weight:700;letter-spacing:0.2em;color:#888;text-transform:uppercase;display:block;margin-bottom:8px;">SALE / PURCHASE</span>
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:16px;">売買仲介</h3>
+          <p style="font-size:13px;color:#666;line-height:1.8;margin-bottom:24px;">
+            マイホームの購入・売却をお考えの方を全力でサポートします。
+            資金計画から物件探し、売却活動まで、経験豊富なスタッフが丁寧にご対応します。
+          </p>
+          <a href="#" class="btn" style="font-size:13px;padding:12px 28px;">売買物件を探す &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 07 PROPERTIES -->
+<!-- ─────────────────────────────────────── -->
+<section id="properties" style="background:#f5f5f5;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-en">PROPERTIES</span>
+      <h2 class="section-title">新着・おすすめ物件</h2>
+      <p class="section-desc">最新の賃貸・売買物件をご紹介します。</p>
+    </div>
+    <!-- タブ -->
+    <div style="display:flex;gap:0;margin-bottom:32px;border-bottom:2px solid #1a1a1a;">
+      <div style="padding:10px 28px;font-size:13px;font-weight:700;background:#1a1a1a;color:#fff;letter-spacing:0.05em;">賃貸物件</div>
+      <div style="padding:10px 28px;font-size:13px;font-weight:700;background:#e0e0e0;color:#888;letter-spacing:0.05em;">売買物件</div>
+    </div>
+    <!-- 物件グリッド -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;">
+      <!-- 物件カード 1 -->
+      <div style="background:#fff;border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:180px;font-size:12px;">[ 物件外観・室内画像 ]</div>
+        <span style="display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;background:#1a1a1a;color:#fff;margin:12px 12px 0;letter-spacing:0.05em;">新着</span>
+        <div style="padding:10px 16px 20px;">
+          <p style="font-size:15px;font-weight:700;margin-bottom:6px;">○○マンション 101号室</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○市○○区 ／ 1LDK ／ 45.00m²</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○線「○○」駅 徒歩5分</p>
+          <p style="font-size:19px;font-weight:900;margin-top:10px;">80,000円<span style="font-size:12px;font-weight:400;color:#888;">／月</span></p>
+        </div>
+      </div>
+      <!-- 物件カード 2 -->
+      <div style="background:#fff;border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:180px;font-size:12px;">[ 物件外観・室内画像 ]</div>
+        <span style="display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;background:#e0e0e0;color:#555;margin:12px 12px 0;letter-spacing:0.05em;">おすすめ</span>
+        <div style="padding:10px 16px 20px;">
+          <p style="font-size:15px;font-weight:700;margin-bottom:6px;">○○アパート 203号室</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○市○○区 ／ 1K ／ 28.50m²</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○線「○○」駅 徒歩8分</p>
+          <p style="font-size:19px;font-weight:900;margin-top:10px;">55,000円<span style="font-size:12px;font-weight:400;color:#888;">／月</span></p>
+        </div>
+      </div>
+      <!-- 物件カード 3 -->
+      <div style="background:#fff;border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:180px;font-size:12px;">[ 物件外観・室内画像 ]</div>
+        <span style="display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;background:#1a1a1a;color:#fff;margin:12px 12px 0;letter-spacing:0.05em;">新着</span>
+        <div style="padding:10px 16px 20px;">
+          <p style="font-size:15px;font-weight:700;margin-bottom:6px;">○○レジデンス 305号室</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○市○○区 ／ 2LDK ／ 62.00m²</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○線「○○」駅 徒歩3分</p>
+          <p style="font-size:19px;font-weight:900;margin-top:10px;">120,000円<span style="font-size:12px;font-weight:400;color:#888;">／月</span></p>
+        </div>
+      </div>
+      <!-- 物件カード 4 -->
+      <div style="background:#fff;border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:180px;font-size:12px;">[ 物件外観・室内画像 ]</div>
+        <span style="display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;background:#e0e0e0;color:#555;margin:12px 12px 0;letter-spacing:0.05em;">おすすめ</span>
+        <div style="padding:10px 16px 20px;">
+          <p style="font-size:15px;font-weight:700;margin-bottom:6px;">○○コーポ 102号室</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○市○○区 ／ 1DK ／ 32.00m²</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○線「○○」駅 徒歩10分</p>
+          <p style="font-size:19px;font-weight:900;margin-top:10px;">62,000円<span style="font-size:12px;font-weight:400;color:#888;">／月</span></p>
+        </div>
+      </div>
+      <!-- 物件カード 5 -->
+      <div style="background:#fff;border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:180px;font-size:12px;">[ 物件外観・室内画像 ]</div>
+        <span style="display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;background:#1a1a1a;color:#fff;margin:12px 12px 0;letter-spacing:0.05em;">新着</span>
+        <div style="padding:10px 16px 20px;">
+          <p style="font-size:15px;font-weight:700;margin-bottom:6px;">○○ハイツ 201号室</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○市○○区 ／ 1LDK ／ 40.00m²</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○線「○○」駅 徒歩7分</p>
+          <p style="font-size:19px;font-weight:900;margin-top:10px;">75,000円<span style="font-size:12px;font-weight:400;color:#888;">／月</span></p>
+        </div>
+      </div>
+      <!-- 物件カード 6 -->
+      <div style="background:#fff;border:1px solid #ddd;overflow:hidden;">
+        <div class="img-placeholder" style="width:100%;height:180px;font-size:12px;">[ 物件外観・室内画像 ]</div>
+        <span style="display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;background:#e0e0e0;color:#555;margin:12px 12px 0;letter-spacing:0.05em;">おすすめ</span>
+        <div style="padding:10px 16px 20px;">
+          <p style="font-size:15px;font-weight:700;margin-bottom:6px;">○○フラット 401号室</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○市○○区 ／ 2DK ／ 50.00m²</p>
+          <p style="font-size:12px;color:#777;margin-bottom:3px;">○○線「○○」駅 徒歩6分</p>
+          <p style="font-size:19px;font-weight:900;margin-top:10px;">90,000円<span style="font-size:12px;font-weight:400;color:#888;">／月</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- もっと見るボタン -->
+    <div style="text-align:center;">
+      <a href="#" class="btn">物件一覧をすべて見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 08 VOICE -->
+<!-- ─────────────────────────────────────── -->
+<section id="voice" style="background:#fff;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-en">CUSTOMER'S VOICE</span>
+      <h2 class="section-title">お客様の声</h2>
+      <p class="section-desc">ENISHIをご利用いただいたお客様からのご感想をご紹介します。</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;">
+      <!-- 声 01 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">賃貸 ／ 30代 女性</p>
+          </div>
+        </div>
+        <p style="font-size:13px;color:#555;line-height:1.8;">
+          「希望のエリアで条件に合うお部屋をすぐに見つけていただきました。
+          担当の方がとても親切で、初めての一人暮らしでも安心して進めることができました。」
+        </p>
+      </div>
+      <!-- 声 02 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">売買 ／ 40代 ご夫婦</p>
+          </div>
+        </div>
+        <p style="font-size:13px;color:#555;line-height:1.8;">
+          「マイホーム購入にあたり、資金計画から物件選びまで丁寧にサポートしていただきました。
+          地域の情報に詳しく、とても頼りになりました。」
+        </p>
+      </div>
+      <!-- 声 03 -->
+      <div style="background:#f5f5f5;border:1px solid #ddd;padding:36px 28px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+          <div class="img-placeholder" style="width:56px;height:56px;border-radius:50%;font-size:10px;flex-shrink:0;">顔写真</div>
+          <div>
+            <p style="font-size:14px;font-weight:700;">○○ ○○ 様</p>
+            <p style="font-size:11px;color:#888;">売却 ／ 50代 男性</p>
+          </div>
+        </div>
+        <p style="font-size:13px;color:#555;line-height:1.8;">
+          「相続した不動産の売却をお願いしました。複雑な状況でしたが、
+          丁寧に対応していただき、無事に売却することができました。本当に感謝しています。」
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 09 ASSESSMENT CTA -->
+<!-- ─────────────────────────────────────── -->
+<section id="assessment" style="background:#2a2a2a;padding:96px 0;">
+  <div style="max-width:800px;margin:0 auto;padding:0 40px;text-align:center;">
+    <span style="font-size:11px;font-weight:700;letter-spacing:0.25em;color:#888;text-transform:uppercase;display:block;margin-bottom:12px;">SELL / ASSESSMENT</span>
+    <h2 style="font-size:30px;font-weight:900;color:#fff;line-height:1.5;margin-bottom:16px;">
+      まずは無料査定から。<br>あなたの不動産の価値を知ろう。
+    </h2>
+    <p style="font-size:14px;color:#aaa;line-height:1.9;margin-bottom:40px;">
+      「売却を考えているけど、いくらになるか分からない」という方も大歓迎。<br>
+      経験豊富なスタッフが、丁寧にご対応いたします。まずはお気軽にご相談ください。
+    </p>
+    <div style="display:flex;gap:20px;justify-content:center;">
+      <a href="#" class="btn-white">無料査定を申し込む</a>
+      <a href="#" class="btn-outline-white">売却の流れを見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 10 NEWS -->
+<!-- ─────────────────────────────────────── -->
+<section id="news" style="background:#fff;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-en">NEWS &amp; INFORMATION</span>
+      <h2 class="section-title">お知らせ</h2>
+    </div>
+    <div style="max-width:800px;margin:0 auto;">
+      <!-- ニュースリスト -->
+      <ul>
+        <li style="display:flex;align-items:baseline;gap:24px;padding:20px 0;border-bottom:1px solid #eee;">
+          <span style="font-size:12px;color:#888;white-space:nowrap;letter-spacing:0.05em;">2026.03.01</span>
+          <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;background:#1a1a1a;color:#fff;white-space:nowrap;letter-spacing:0.05em;">新着物件</span>
+          <a href="#" style="font-size:14px;color:#1a1a1a;">○○エリアに新着賃貸物件が入荷しました。</a>
+        </li>
+        <li style="display:flex;align-items:baseline;gap:24px;padding:20px 0;border-bottom:1px solid #eee;">
+          <span style="font-size:12px;color:#888;white-space:nowrap;letter-spacing:0.05em;">2026.02.15</span>
+          <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;background:#e0e0e0;color:#555;white-space:nowrap;letter-spacing:0.05em;">お知らせ</span>
+          <a href="#" style="font-size:14px;color:#1a1a1a;">春の引越しシーズンに向けた賃貸物件特集を公開しました。</a>
+        </li>
+        <li style="display:flex;align-items:baseline;gap:24px;padding:20px 0;border-bottom:1px solid #eee;">
+          <span style="font-size:12px;color:#888;white-space:nowrap;letter-spacing:0.05em;">2026.02.01</span>
+          <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;background:#e0e0e0;color:#555;white-space:nowrap;letter-spacing:0.05em;">お知らせ</span>
+          <a href="#" style="font-size:14px;color:#1a1a1a;">ホームページをリニューアルしました。</a>
+        </li>
+        <li style="display:flex;align-items:baseline;gap:24px;padding:20px 0;border-bottom:1px solid #eee;">
+          <span style="font-size:12px;color:#888;white-space:nowrap;letter-spacing:0.05em;">2026.01.10</span>
+          <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;background:#1a1a1a;color:#fff;white-space:nowrap;letter-spacing:0.05em;">新着物件</span>
+          <a href="#" style="font-size:14px;color:#1a1a1a;">○○市内の売買物件情報を更新しました。</a>
+        </li>
+        <li style="display:flex;align-items:baseline;gap:24px;padding:20px 0;border-bottom:1px solid #eee;">
+          <span style="font-size:12px;color:#888;white-space:nowrap;letter-spacing:0.05em;">2025.12.20</span>
+          <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;background:#e0e0e0;color:#555;white-space:nowrap;letter-spacing:0.05em;">お知らせ</span>
+          <a href="#" style="font-size:14px;color:#1a1a1a;">年末年始の営業時間についてお知らせします。</a>
+        </li>
+      </ul>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="#" class="btn">お知らせ一覧を見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 11 ACCESS -->
+<!-- ─────────────────────────────────────── -->
+<section id="access" style="background:#f5f5f5;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-en">SHOP INFORMATION</span>
+      <h2 class="section-title">店舗情報・アクセス</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+      <!-- 地図プレースホルダー -->
+      <div class="img-placeholder" style="width:100%;height:360px;font-size:14px;">[ Googleマップ 埋め込みエリア ]</div>
+      <!-- 店舗情報テーブル -->
+      <div>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;">
+          <tbody>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="padding:16px 12px;text-align:left;font-weight:700;color:#555;width:30%;white-space:nowrap;">会社名</th>
+              <td style="padding:16px 12px;color:#1a1a1a;">株式会社ENISHI（エニシ）</td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="padding:16px 12px;text-align:left;font-weight:700;color:#555;">所在地</th>
+              <td style="padding:16px 12px;color:#1a1a1a;">〒000-0000<br>○○県○○市○○区○○町0-0-0</td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="padding:16px 12px;text-align:left;font-weight:700;color:#555;">電話番号</th>
+              <td style="padding:16px 12px;color:#1a1a1a;">000-0000-0000</td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="padding:16px 12px;text-align:left;font-weight:700;color:#555;">FAX</th>
+              <td style="padding:16px 12px;color:#1a1a1a;">000-0000-0001</td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="padding:16px 12px;text-align:left;font-weight:700;color:#555;">営業時間</th>
+              <td style="padding:16px 12px;color:#1a1a1a;">9:00〜18:00（定休日：水曜日）</td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="padding:16px 12px;text-align:left;font-weight:700;color:#555;">アクセス</th>
+              <td style="padding:16px 12px;color:#1a1a1a;">○○線「○○」駅 徒歩○分</td>
+            </tr>
+            <tr>
+              <th style="padding:16px 12px;text-align:left;font-weight:700;color:#555;">免許番号</th>
+              <td style="padding:16px 12px;color:#1a1a1a;">○○知事（○）第○○○○○号</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 12 CONTACT CTA -->
+<!-- ─────────────────────────────────────── -->
+<section id="contact-cta" style="background:#1a1a1a;padding:96px 0;">
+  <div style="max-width:800px;margin:0 auto;padding:0 40px;text-align:center;">
+    <span style="font-size:11px;font-weight:700;letter-spacing:0.25em;color:#888;text-transform:uppercase;display:block;margin-bottom:12px;">CONTACT US</span>
+    <h2 style="font-size:30px;font-weight:900;color:#fff;line-height:1.5;margin-bottom:16px;">
+      お気軽にご相談ください。
+    </h2>
+    <p style="font-size:14px;color:#aaa;line-height:1.9;margin-bottom:16px;">
+      賃貸・売買・売却など、不動産に関するご相談はいつでも受け付けております。<br>
+      まずはお電話またはメールフォームよりお気軽にお問い合わせください。
+    </p>
+    <p style="font-size:28px;font-weight:900;color:#fff;letter-spacing:0.05em;margin-bottom:36px;">000-0000-0000</p>
+    <div style="display:flex;gap:20px;justify-content:center;">
+      <a href="#" class="btn-white">メールでお問い合わせ</a>
+      <a href="#" class="btn-outline-white">LINEで相談する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────── -->
+<!-- 13 FOOTER -->
+<!-- ─────────────────────────────────────── -->
+<footer id="footer" style="background:#111;padding:64px 0 32px;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 40px;">
+    <!-- 4カラムリンク -->
+    <div style="display:grid;grid-template-columns:280px 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid #333;">
+      <!-- ロゴ & 会社情報 -->
+      <div>
+        <span style="font-size:22px;font-weight:900;letter-spacing:0.15em;color:#fff;">ENISHI</span><br>
+        <span style="font-size:9px;letter-spacing:0.15em;color:#666;">株式会社エニシ</span>
+        <p style="font-size:12px;color:#888;margin-top:16px;line-height:1.9;">
+          不動産仲介売買・賃貸を専門とする<br>地域密着型の不動産会社です。<br><br>
+          〒000-0000<br>○○県○○市○○区<br>TEL: 000-0000-0000
+        </p>
+      </div>
+      <!-- SERVICES -->
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">SERVICES</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a style="font-size:12px;color:#888;">賃貸物件を探す</a></li>
+          <li><a style="font-size:12px;color:#888;">売買物件を探す</a></li>
+          <li><a style="font-size:12px;color:#888;">不動産を売却する</a></li>
+          <li><a style="font-size:12px;color:#888;">無料査定を依頼する</a></li>
+        </ul>
+      </div>
+      <!-- COMPANY -->
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">COMPANY</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a style="font-size:12px;color:#888;">会社概要</a></li>
+          <li><a style="font-size:12px;color:#888;">ENISHIの強み</a></li>
+          <li><a style="font-size:12px;color:#888;">スタッフ紹介</a></li>
+          <li><a style="font-size:12px;color:#888;">採用情報</a></li>
+        </ul>
+      </div>
+      <!-- INFORMATION -->
+      <div>
+        <h4 style="font-size:11px;font-weight:700;letter-spacing:0.2em;color:#fff;margin-bottom:20px;text-transform:uppercase;">INFORMATION</h4>
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li><a style="font-size:12px;color:#888;">お知らせ</a></li>
+          <li><a style="font-size:12px;color:#888;">店舗情報・アクセス</a></li>
+          <li><a style="font-size:12px;color:#888;">お問い合わせ</a></li>
+          <li><a style="font-size:12px;color:#888;">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- SNS & コピーライト -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding-top:32px;">
+      <div style="display:flex;gap:12px;">
+        <div style="width:36px;height:36px;background:#333;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:10px;color:#888;font-weight:700;">IG</div>
+        <div style="width:36px;height:36px;background:#333;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:10px;color:#888;font-weight:700;">LN</div>
+        <div style="width:36px;height:36px;background:#333;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:10px;color:#888;font-weight:700;">TW</div>
+      </div>
+      <p style="font-size:11px;color:#555;letter-spacing:0.05em;">© 2026 ENISHI Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
